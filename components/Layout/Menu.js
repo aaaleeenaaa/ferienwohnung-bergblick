@@ -10,8 +10,9 @@ export default function Navbar() {
   return (
     <StyledNavbar>
       <Link href="/">Home</Link>
+      <Link href="/appartment">Die Wohnung</Link>
+      <Link href="/prices">Infos und Preise</Link>
       <Link href="/surroundings">Umgebung</Link>
-      <Link href="/prices">Preise</Link>
       <Link href="/arrival">Anfahrt</Link>
       <Link href="/contact">Kontakt</Link>
     </StyledNavbar>

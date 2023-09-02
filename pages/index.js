@@ -1,8 +1,4 @@
-import styled from "styled-components";
-
-const StyledSection = styled.section`
-  max-width: 80%;
-`;
+import { StyledSection } from "@/components/Section";
 
 export default function HomePage() {
   return (
