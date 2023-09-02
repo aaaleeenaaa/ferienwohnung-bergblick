@@ -4,9 +4,9 @@ import Header from "./Header.js";
 
 const StyledMain = styled.main`
   margin-top: 5rem;
-  margin-bottom: 4.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 `;
 
