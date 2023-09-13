@@ -1,4 +1,4 @@
-import { StyledSection } from "@/components/Section";
+import { StyledSection } from "@/components/StyledSection";
 import styled from "styled-components";
 
 const StyledHeading = styled.h2`
