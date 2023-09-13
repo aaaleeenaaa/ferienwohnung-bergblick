@@ -1,4 +1,4 @@
-import { StyledSection } from "@/components/Section";
+import { StyledSection } from "@/components/StyledSection";
 
 export default function HomePage() {
   return (

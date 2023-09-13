@@ -1,5 +1,5 @@
 import Slideshow from "@/components/Slideshow";
-import { StyledSection } from "@/components/Section";
+import { StyledSection } from "@/components/StyledSection";
 
 export default function Appartment() {
   return (
