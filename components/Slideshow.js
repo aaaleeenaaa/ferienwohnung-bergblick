@@ -3,9 +3,18 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const images = [
-  { src: "/Bad.jpeg", width: 800, height: 600 },
-  { src: "/Garten.jpeg", width: 800, height: 600 },
+  { src: "/Wohnzimmer-2.jpeg", width: 800, height: 600 },
+  { src: "/Schlafzimmer-2.jpeg", width: 800, height: 600 },
   { src: "/Schlafzimmer.jpeg", width: 800, height: 600 },
+  { src: "/Küche.jpeg", width: 800, height: 600 },
+  { src: "/Bad-2.jpeg", width: 800, height: 600 },
+  { src: "/Bad.jpeg", width: 800, height: 600 },
+  { src: "/Dusche.jpeg", width: 800, height: 600 },
+  { src: "/Garten.jpeg", width: 800, height: 600 },
+  { src: "/Terrasse.jpeg", width: 800, height: 600 },
+  { src: "/Terrasse-2.jpeg", width: 800, height: 600 },
+  { src: "/Terrasse-3.jpeg", width: 800, height: 600 },
+  { src: "/Sauna.jpeg", width: 800, height: 600 },
 ];
 
 const StyledSlideshow = styled.div`
