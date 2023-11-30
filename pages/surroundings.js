@@ -36,7 +36,7 @@ export default function Surroundings() {
           Webcams rund um Walchensee & Kochelsee
         </Link>
         <Link href="www.BAYregio.de/Freizeit/Trimini">
-          Ausflug in das Schwimmbad "Trimini" in Kochel am Kochelsee
+          Ausflug in das Schwimmbad Trimini in Kochel am Kochelsee
         </Link>
         <Link href="www.Walchensee-Kochelsee.de/tipps/Radtour-Walchensee.php">
           Fahrrad-Tour / Wanderung rund um den Walchensee
