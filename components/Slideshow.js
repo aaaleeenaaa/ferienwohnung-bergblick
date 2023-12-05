@@ -3,26 +3,26 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const images = [
-  { src: "/Wohnzimmer-2.jpeg", width: 800, height: 600 },
-  { src: "/Schlafzimmer-2.jpeg", width: 800, height: 600 },
-  { src: "/Schlafzimmer.jpeg", width: 800, height: 600 },
-  { src: "/Küche.jpeg", width: 800, height: 600 },
-  { src: "/Bad-2.jpeg", width: 800, height: 600 },
-  { src: "/Bad.jpeg", width: 800, height: 600 },
-  { src: "/Dusche.jpeg", width: 800, height: 600 },
-  { src: "/Garten.jpeg", width: 800, height: 600 },
-  { src: "/Terrasse.jpeg", width: 800, height: 600 },
-  { src: "/Terrasse-2.jpeg", width: 800, height: 600 },
-  { src: "/Terrasse-3.jpeg", width: 800, height: 600 },
-  { src: "/Sauna.jpeg", width: 800, height: 600 },
+  { src: "/Wohnzimmer-2.jpeg", width: 700, height: 393 },
+  { src: "/Schlafzimmer-2.jpeg", width: 700, height: 393 },
+  { src: "/Schlafzimmer.jpeg", width: 300, height: 533 },
+  { src: "/Küche.jpeg", width: 300, height: 533 },
+  { src: "/Bad-2.jpeg", width: 700, height: 393 },
+  { src: "/Bad.jpeg", width: 300, height: 533 },
+  { src: "/Dusche.jpeg", width: 300, height: 533 },
+  { src: "/Garten.jpeg", width: 700, height: 393 },
+  { src: "/Terrasse.jpeg", width: 700, height: 393 },
+  { src: "/Terrasse-2.jpeg", width: 700, height: 393 },
+  { src: "/Terrasse-3.jpeg", width: 700, height: 393 },
+  { src: "/Sauna.jpeg", width: 700, height: 393 },
 ];
 
 const StyledSlideshow = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   text-align: center;
+  position: relative;
 `;
 
 const ArrowButton = styled.button`
@@ -30,6 +30,16 @@ const ArrowButton = styled.button`
   border: none;
   font-size: 24px;
   cursor: pointer;
+  position: fixed;
+  top: calc(50% - 20px);
+`;
+
+const PrevButton = styled(ArrowButton)`
+  left: 20%;
+`;
+
+const NextButton = styled(ArrowButton)`
+  right: 20%;
 `;
 
 const Slideshow = () => {
@@ -49,14 +59,14 @@ const Slideshow = () => {
 
   return (
     <StyledSlideshow>
-      <ArrowButton onClick={goToPrevious}>&larr;</ArrowButton>
+      <PrevButton onClick={goToPrevious}>&larr;</PrevButton>
       <Image
         src={images[currentIndex].src}
         alt={`Slide ${currentIndex + 1}`}
         width={images[currentIndex].width}
         height={images[currentIndex].height}
       />
-      <ArrowButton onClick={goToNext}>&rarr;</ArrowButton>
+      <NextButton onClick={goToNext}>&rarr;</NextButton>
     </StyledSlideshow>
   );
 };

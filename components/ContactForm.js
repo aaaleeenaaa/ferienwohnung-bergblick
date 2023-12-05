@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { StyledCardElement } from "./StyledCardElement";
 
 const StyledForm = styled.form`
   min-width: 10rem;
@@ -75,54 +76,57 @@ export default function ContactForm() {
   }
 
   return (
-    <StyledForm onSubmit={handleSubmit}>
-      <StyledLabel>
-        Name:
-        <StyledInput
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          minLength="3"
-        />
-      </StyledLabel>
-      <StyledLabel>
-        Email:
-        <StyledInput
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          minLength="4"
-        />
-      </StyledLabel>
-      <StyledLabel>
-        Telephone:{" "}
-        <StyledInput
-          type="text"
-          name="telephone"
-          value={formData.telephone}
-          onChange={handleChange}
-          required
-          minLength="3"
-          pattern="0[0-9]*"
-        />
-      </StyledLabel>
-      <StyledLabel>
-        Message:
-        <StyledTextarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          minLength="3"
-        />
-      </StyledLabel>
-      <StyledButtonContainer>
-        <button type="submit">Submit</button>
-      </StyledButtonContainer>
-    </StyledForm>
+    <StyledCardElement width={"35%"}>
+      <StyledForm onSubmit={handleSubmit}>
+        <h2>Kontaktieren Sie uns</h2>
+        <StyledLabel>
+          Name:
+          <StyledInput
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            minLength="3"
+          />
+        </StyledLabel>
+        <StyledLabel>
+          Email-Adresse:
+          <StyledInput
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            minLength="4"
+          />
+        </StyledLabel>
+        <StyledLabel>
+          Telefonnummer:{" "}
+          <StyledInput
+            type="text"
+            name="telephone"
+            value={formData.telephone}
+            onChange={handleChange}
+            required
+            minLength="3"
+            pattern="0[0-9]*"
+          />
+        </StyledLabel>
+        <StyledLabel>
+          Ihre Nachricht an uns:
+          <StyledTextarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            minLength="3"
+          />
+        </StyledLabel>
+        <StyledButtonContainer>
+          <button type="submit">Absenden</button>
+        </StyledButtonContainer>
+      </StyledForm>
+    </StyledCardElement>
   );
 }
