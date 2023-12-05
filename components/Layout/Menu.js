@@ -4,9 +4,12 @@ import styled from "styled-components";
 const StyledNavbar = styled.nav`
   display: flex;
   justify-content: space-around;
+  background-color: #eff7ed;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 `;
 
-export default function Navbar() {
+export default function Menu() {
   return (
     <StyledNavbar>
       <Link href="/">Home</Link>

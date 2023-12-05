@@ -1,11 +1,11 @@
 import Slideshow from "@/components/Slideshow";
-import { StyledSection } from "@/components/StyledSection";
+import { StyledCardElement } from "@/components/StyledCardElement";
 
 export default function Appartment() {
   return (
     <>
       <Slideshow />
-      <StyledSection>
+      <StyledCardElement>
         <p>
           {" "}
           Die Ferienwohnung liegt abseits der Hauptstraße in einem ruhigen
@@ -15,7 +15,7 @@ export default function Appartment() {
         </p>
         <p>
           Geschirrtücher und Spülmittel sind auch da. Badezimmer mit Dusche. Ein
-          Fön,ein Bügeleisen und Schuhputzmittel sind vorhanden. Schlafzimmer
+          Fön, ein Bügeleisen und Schuhputzmittel sind vorhanden. Schlafzimmer
           mit Doppelbett. Bettwäsche und Handtücher werden gestellt. Die
           Terrassentüre zum Schlafzimmer hinaus hat auch ein Moskitonetz.
         </p>
@@ -27,7 +27,7 @@ export default function Appartment() {
           Neben der Terrasse zum Schlafzimmer hinaus steht eine kleine
           Gartensauna (Zusatzgebühr).
         </p>
-      </StyledSection>
+      </StyledCardElement>
     </>
   );
 }
