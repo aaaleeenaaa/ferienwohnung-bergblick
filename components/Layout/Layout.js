@@ -1,6 +1,7 @@
 import Menu from "./Menu.js";
 import styled from "styled-components";
 import Header from "./Header.js";
+import Footer from "./Footer.js";
 
 const StyledMain = styled.main`
   display: flex;
@@ -9,6 +10,7 @@ const StyledMain = styled.main`
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #eff7ed;
+  min-height: 55vh;
 `;
 
 export default function Layout({ children }) {
@@ -17,8 +19,7 @@ export default function Layout({ children }) {
       <Header />
       <Menu />
       <StyledMain>{children}</StyledMain>
+      <Footer />
     </>
   );
 }
-
-// #dff7f4
