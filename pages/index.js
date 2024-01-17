@@ -4,6 +4,12 @@ import styled from "styled-components";
 
 const StyledImage = styled(Image)`
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    /* Adjust the width and height for mobile devices */
+    width: 200px;
+    height: 300px;
+  }
 `;
 
 export default function HomePage() {

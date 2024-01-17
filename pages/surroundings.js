@@ -18,6 +18,11 @@ const StyledContainer = styled.div`
   gap: 20px;
 `;
 
+const ResponsiveImage = styled(Image)`
+  width: 100%;
+  height: auto;
+`;
+
 export default function Surroundings() {
   return (
     <>
@@ -49,13 +54,13 @@ export default function Surroundings() {
             Natur genießen.
           </p>
         </StyledCardElement>
-        <Image
+        <ResponsiveImage
           src="/WalchenseeUnsplash.jpg"
           alt="Walchensee"
           width={400}
           height={267}
         />
-        <Image
+        <ResponsiveImage
           src="/JochbergUnsplash.jpg"
           alt="Jochberg"
           width={400}
