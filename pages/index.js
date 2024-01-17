@@ -31,9 +31,8 @@ export default function HomePage() {
           Mit liebevoll gestalteten Räumen, einer voll ausgestatteten Küche und
           einer gemütlichen Terrasse werden Sie sich wie zu Hause fühlen. Gönnen
           Sie sich eine Auszeit vom Alltag und lassen Sie sich von der Schönheit
-          dieser Gegend verzaubern. Ob Sie sich nach Entspannung sehnen oder
-          Abenteuerlust verspüren - unsere Ferienwohnung bietet Ihnen beides.
-          Wir freuen uns darauf, Sie bald bei uns willkommen zu heißen!
+          dieser Gegend verzaubern. Wir freuen uns darauf, Sie bald bei uns
+          willkommen zu heißen!
         </p>
         <p>
           Herzlichst, Ihr Ferienwohnungsteam - Susanne und Christian Röthlein

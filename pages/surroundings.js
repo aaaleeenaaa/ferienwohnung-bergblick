@@ -19,8 +19,12 @@ const StyledContainer = styled.div`
 `;
 
 const ResponsiveImage = styled(Image)`
-  width: 100%;
+  width: 400px;
   height: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default function Surroundings() {
@@ -55,16 +59,16 @@ export default function Surroundings() {
           </p>
         </StyledCardElement>
         <ResponsiveImage
-          src="/WalchenseeUnsplash.jpg"
-          alt="Walchensee"
+          src="/Landschaft1.jpeg"
+          alt="See"
           width={400}
-          height={267}
+          height={300}
         />
         <ResponsiveImage
-          src="/JochbergUnsplash.jpg"
-          alt="Jochberg"
+          src="/Landschaft2.jpeg"
+          alt="Berg"
           width={400}
-          height={267}
+          height={225}
         />
         <StyledCardElement>
           <p>Hier schon einmal ein paar Inspirationen:</p>
