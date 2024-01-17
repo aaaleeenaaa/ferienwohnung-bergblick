@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { StyledCardElement } from "./StyledCardElement";
+import Link from "next/link";
 
 const StyledForm = styled.form`
   min-width: 10rem;
@@ -13,8 +14,11 @@ const StyledLabel = styled.label`
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* Stretch input fields horizontally */
-  max-width: 20rem; /* Adjust the maximum width for better mobile layout */
+  align-items: stretch;
+  width: 20rem;
+  @media (max-width: 768px) {
+    width: 15rem;
+  }
 `;
 
 const StyledInput = styled.input`
@@ -23,7 +27,7 @@ const StyledInput = styled.input`
 
 const StyledTextarea = styled.textarea`
   width: 100%;
-  resize: vertical; /* Allow vertical resizing of textarea */
+  resize: vertical;
   height: 10rem;
 `;
 
@@ -80,6 +84,11 @@ export default function ContactForm() {
     <StyledCardElement width={"35%"}>
       <StyledForm onSubmit={handleSubmit}>
         <h2>Kontaktieren Sie uns</h2>
+        <p>
+          Sie haben Fragen, Wünsche, Anregungen oder sind an einer Buchung
+          interessiert? Hinterlassen Sie uns gerne eine Nachricht und wir melden
+          uns bei Ihnen!
+        </p>
         <StyledLabel>
           Name:
           <StyledInput
@@ -124,6 +133,15 @@ export default function ContactForm() {
             minLength="3"
           />
         </StyledLabel>
+        <p>
+          Ja, ich habe die{" "}
+          <Link href="/privacystatement">Datenschutzerklärung</Link> zur
+          Kenntnis genommen und bin damit einverstanden, dass die von mir
+          angegebenen Daten elektronisch erhoben und gespeichert werden. Meine
+          Daten werden dabei nur streng zweckgebunden zur Bearbeitung und
+          Beantwortung meiner Anfrage benutzt. Mit dem Absenden des
+          Kontaktformulars erkläre ich mich mit der Verarbeitung einverstanden.
+        </p>
         <StyledButtonContainer>
           <button type="submit">Absenden</button>
         </StyledButtonContainer>

@@ -8,7 +8,6 @@ const images = [
   { src: "/Schlafzimmer.jpeg", width: 300, height: 533 },
   { src: "/Küche.jpeg", width: 300, height: 533 },
   { src: "/Bad-2.jpeg", width: 700, height: 393 },
-  { src: "/Bad.jpeg", width: 300, height: 533 },
   { src: "/Dusche.jpeg", width: 300, height: 533 },
   { src: "/Garten.jpeg", width: 700, height: 393 },
   { src: "/Terrasse.jpeg", width: 700, height: 393 },

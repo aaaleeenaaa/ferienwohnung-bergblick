@@ -4,8 +4,8 @@ import { StyledCardElement } from "@/components/StyledCardElement";
 export default function Appartment() {
   return (
     <>
-      <Slideshow />
       <StyledCardElement>
+        <h2>Das ist die Ferienwohnung</h2>
         <p>
           {" "}
           Die Ferienwohnung liegt abseits der Hauptstraße in einem ruhigen
@@ -28,6 +28,7 @@ export default function Appartment() {
           Gartensauna (Zusatzgebühr).
         </p>
       </StyledCardElement>
+      <Slideshow />
     </>
   );
 }
