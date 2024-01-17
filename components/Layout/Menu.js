@@ -5,8 +5,22 @@ const StyledNavbar = styled.nav`
   display: flex;
   justify-content: space-around;
   background-color: #eff7ed;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  & > * {
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+
+    & > * {
+      margin: 0.5rem 0;
+    }
+  }
 `;
 
 export default function Menu() {
@@ -21,47 +35,3 @@ export default function Menu() {
     </StyledNavbar>
   );
 }
-
-/*import { AiOutlineMenu } from "react-icons/ai";
-import { useState } from "react";
-import Link from "next/link";
-import styled from "styled-components";
-
-const StyledMenu = styled.nav`
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-`;
-
-export default function Menu() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function toggleMenu() {
-    setIsOpen(!isOpen);
-  }
-
-  return (
-    <>
-      <StyledMenu>
-        <AiOutlineMenu onClick={toggleMenu} />
-        {isOpen && (
-          <ul>
-            <li>
-              <Link href="/index">Home</Link>
-            </li>
-            <li>
-              <Link href="/#">Umgebung</Link>
-            </li>
-            <li>
-              <Link href="/#">Preise</Link>
-            </li>
-            <li>
-              <Link href="/#">Kontakt</Link>
-            </li>
-          </ul>
-        )}
-      </StyledMenu>
-    </>
-  );
-}
-*/

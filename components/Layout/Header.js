@@ -12,6 +12,10 @@ const StyledHeader = styled.header`
   background-position: center;
   text-align: center;
   height: 15rem;
+
+  @media (max-width: 768px) {
+    height: 10rem;
+  }
 `;
 
 const StyledHeaderText = styled(Link)`
@@ -20,8 +24,12 @@ const StyledHeaderText = styled(Link)`
   text-decoration: none;
   color: white;
   text-decoration: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 10);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 10);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export default function Header() {
@@ -38,12 +46,3 @@ export default function Header() {
     </>
   );
 }
-
-// <div>
-//   <Image
-// src="/mountain-icon.png"
-// alt="Mountain icon"
-// width={200}
-// height={200}
-// />
-// </div>

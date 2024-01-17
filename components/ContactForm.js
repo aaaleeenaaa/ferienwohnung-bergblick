@@ -13,8 +13,8 @@ const StyledLabel = styled.label`
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 20rem;
+  align-items: stretch; /* Stretch input fields horizontally */
+  max-width: 20rem; /* Adjust the maximum width for better mobile layout */
 `;
 
 const StyledInput = styled.input`
@@ -23,6 +23,7 @@ const StyledInput = styled.input`
 
 const StyledTextarea = styled.textarea`
   width: 100%;
+  resize: vertical; /* Allow vertical resizing of textarea */
   height: 10rem;
 `;
 
