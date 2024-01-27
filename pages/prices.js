@@ -19,7 +19,7 @@ export default function Prices() {
       <StyledContainer>
         <StyledCardElement width={"40%"}>
           <StyledHeading>Preise</StyledHeading>{" "}
-          <p>Sie können die Wohnung ab drei Nächten buchen.</p>
+          <p>Sie können die Wohnung ab vier Nächten buchen.</p>
           <p>
             Preis pro Nacht 95,-€ für sieben Nächte. Ab der achten Nacht 90,- €
             pro Nacht.{" "}

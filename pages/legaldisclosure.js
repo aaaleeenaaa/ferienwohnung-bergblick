@@ -15,6 +15,9 @@ export default function LegalDisclosure() {
       <p>Telefon: +49 176 45659698 </p>
       <p>E-Mail: ferienwohnung-bergblick-kochel@web.de</p>
 
+      <h3>Bilder</h3>
+      <p>Alle genutzten Bilder © Susanne und Christian Röthlein</p>
+
       <p>
         Quelle: <Link href="https://www.e-recht24.de">e-recht24.de</Link>
       </p>

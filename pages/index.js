@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <>
       <StyledCardElement>
-        <h1>Willkommen in der Ferienwohnung Bergblick in Kochel!</h1>
+        <h1>Willkommen in der Ferienwohnung Bergblick in Kochel/Ried!</h1>
         <p>
           Verbringen Sie unvergessliche Tage inmitten der atemberaubenden
           Schönheit der bayerischen Alpen. Unsere gemütliche Ferienwohnung
@@ -29,7 +29,7 @@ export default function HomePage() {
           Unsere Ferienwohnung bietet Ihnen natürlich auch den Komfort und die
           Annehmlichkeiten, die Sie für einen erholsamen Aufenthalt benötigen.
           Mit liebevoll gestalteten Räumen, einer voll ausgestatteten Küche und
-          einer gemütlichen Terrasse werden Sie sich wie zu Hause fühlen. Gönnen
+          einer gemütlichen Terrasse können Sie die Seele baumeln lassen. Gönnen
           Sie sich eine Auszeit vom Alltag und lassen Sie sich von der Schönheit
           dieser Gegend verzaubern. Wir freuen uns darauf, Sie bald bei uns
           willkommen zu heißen!

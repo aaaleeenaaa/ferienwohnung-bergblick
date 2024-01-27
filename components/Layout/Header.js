@@ -36,11 +36,24 @@ export default function Header() {
   return (
     <>
       <Head>
-        <title>Ferienwohnung Bergblick</title>
+        <title>Ferienwohnung Bergblick in Kochel/Ried</title>
+        <meta
+          name="description"
+          content="Ferienwohnung Bergblick in Kochel/Ried"
+        />
+        <meta
+          property="og:title"
+          content="Ferienwohnung Bergblick in Kochel/Ried"
+        />
+        <meta property="og:type" content="Webseite" />
+        <meta
+          name="keywords"
+          content="Ferienwohnung Bergblick, Kochel, Kochel/Ried, Ferienwohnung, Urlaub, Bayern"
+        />
       </Head>
       <StyledHeader>
         <StyledHeaderText href="/">
-          Ferienwohnung Bergblick in Kochel
+          Ferienwohnung Bergblick in Kochel/Ried
         </StyledHeaderText>
       </StyledHeader>
     </>
