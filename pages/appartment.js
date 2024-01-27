@@ -11,13 +11,12 @@ export default function Appartment() {
           Die Ferienwohnung liegt abseits der Hauptstraße in einem ruhigen
           Wohngebiet. Sie hat einen eigenen Eingang und einen Parkplatz. Die
           Küche verfügt über einen Geschirrspüler, Kaffeemaschine, Wasserkocher,
-          Toaster, Moskitonetz.
+          Toaster.
         </p>
         <p>
           Geschirrtücher und Spülmittel sind auch da. Badezimmer mit Dusche. Ein
           Fön, ein Bügeleisen und Schuhputzmittel sind vorhanden. Schlafzimmer
-          mit Doppelbett. Bettwäsche und Handtücher werden gestellt. Die
-          Terrassentüre zum Schlafzimmer hinaus hat auch ein Moskitonetz.
+          mit Doppelbett. Bettwäsche und Handtücher werden gestellt.
         </p>
         <p>
           Unsere Ferienwohnung hat im Wohn- und Schlafzimmer Holzfußböden, in
