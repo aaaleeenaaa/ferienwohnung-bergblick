@@ -34,9 +34,7 @@ export default function HomePage() {
           dieser Gegend verzaubern. Wir freuen uns darauf, Sie bald bei uns
           willkommen zu heißen!
         </p>
-        <p>
-          Herzlichst, Ihr Ferienwohnungsteam - Susanne und Christian Röthlein
-        </p>
+        <p>Herzlichst, Ihre Gastgeber - Susanne und Christian Röthlein</p>
         <StyledImage
           src="/SusanneChristian.jpeg"
           alt="Susanne und Christian"
