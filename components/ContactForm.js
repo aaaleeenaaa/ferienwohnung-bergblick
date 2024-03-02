@@ -37,6 +37,10 @@ const StyledButtonContainer = styled.div`
   margin-top: 1rem;
 `;
 
+const SmallP = styled.p`
+  font-size: 0.8rem;
+`;
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -133,7 +137,7 @@ export default function ContactForm() {
             minLength="3"
           />
         </StyledLabel>
-        <p>
+        <SmallP>
           Ja, ich habe die{" "}
           <Link href="/privacystatement">Datenschutzerklärung</Link> zur
           Kenntnis genommen und bin damit einverstanden, dass die von mir
@@ -141,7 +145,7 @@ export default function ContactForm() {
           Daten werden dabei nur streng zweckgebunden zur Bearbeitung und
           Beantwortung meiner Anfrage benutzt. Mit dem Absenden des
           Kontaktformulars erkläre ich mich mit der Verarbeitung einverstanden.
-        </p>
+        </SmallP>
         <StyledButtonContainer>
           <button type="submit">Absenden</button>
         </StyledButtonContainer>

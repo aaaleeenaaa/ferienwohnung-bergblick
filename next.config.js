@@ -13,8 +13,6 @@ const nextConfig = {
 
     return config;
   },
-  basePath: "/ferienwohnung-bergblick",
-  assetPrefix: "/ferienwohnung-bergblick/",
 };
 
 module.exports = nextConfig;
