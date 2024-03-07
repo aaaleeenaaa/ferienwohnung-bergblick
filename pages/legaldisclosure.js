@@ -13,7 +13,7 @@ export default function LegalDisclosure() {
 
       <h3>Kontakt</h3>
       <p>Telefon: +49 176 45659698 </p>
-      <p>E-Mail: ferienwohnung-bergblick-kochel@web.de</p>
+      <p>E-Mail: ferienwohnung-bergblick@kochel-ried.de</p>
 
       <h3>Bilder</h3>
       <p>Alle genutzten Bilder © Susanne und Christian Röthlein</p>

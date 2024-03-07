@@ -11,6 +11,7 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "cloudinary": "^1.40.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",

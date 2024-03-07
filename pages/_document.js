@@ -26,7 +26,17 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <meta
+            name="description"
+            content="Ferienwohnung Kochel - Herzlich willkommen in der wunderschönen Ferienwohnung Bergblick in Kochel (Ried)"
+          />
+          <meta
+            name="keywords"
+            content="Ferienwohnung Kochel, Ferienwohnung Bergblick, Ferienwohnung Bergblick Kochel, Ferienwohnung Bergblick Ried, Ferienwohnung Bergblick in Kochel/Ried, Ferienwohnung Alpen"
+          />
+          <meta charset="utf-8" />
+        </Head>
         <body>
           <Main />
           <NextScript />

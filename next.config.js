@@ -1,7 +1,9 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   compiler: {
     styledComponents: true,
+  },
+  images: {
+    unoptimized: true,
   },
   reactStrictMode: true,
   webpack(config) {
@@ -12,6 +14,18 @@ const nextConfig = {
     });
 
     return config;
+  },
+  exportPathMap: async function () {
+    return {
+      "/": { page: "/" },
+      "/appartment": { page: "/appartment" },
+      "/arrival": { page: "/arrival" },
+      "/contact": { page: "/contact" },
+      "/legaldisclosure": { page: "/legaldisclosure" },
+      "/prices": { page: "/prices" },
+      "/privacystatement": { page: "/privacystatement" },
+      "/surroundings": { page: "/surroundings" },
+    };
   },
 };
 
