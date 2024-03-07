@@ -36,7 +36,7 @@ export default function Header() {
     <>
       <StyledHeader>
         <StyledHeaderText href="/">
-          Ferienwohnung Bergblick in Kochel/Ried
+          Ferienwohnung Bergblick in Kochel (Ried)
         </StyledHeaderText>
       </StyledHeader>
     </>

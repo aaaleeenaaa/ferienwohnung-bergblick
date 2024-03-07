@@ -19,11 +19,11 @@ export default function HomePage() {
         <h1>Willkommen in der Ferienwohnung Bergblick in Kochel/Ried!</h1>
         <p>
           Verbringen Sie unvergessliche Tage inmitten der atemberaubenden
-          Schönheit der bayerischen Alpen. Unsere gemütliche Ferienwohnung
-          bietet Ihnen die perfekte Basis, um die idyllische bergige Landschaft
-          und die zahlreichen Seen in der Umgebung wie den malerischen
-          Walchensee zu erkunden. Die Lage unserer Ferienwohnung ist einfach
-          unschlagbar.
+          Schönheit der bayerischen Alpen. Unsere gemütliche Ferienwohnung in
+          Kochel bietet Ihnen die perfekte Basis, um die idyllische bergige
+          Landschaft und die zahlreichen Seen in der Umgebung wie den
+          malerischen Walchensee zu erkunden. Die Lage unserer Ferienwohnung ist
+          einfach unschlagbar.
         </p>
         <p>
           Unsere Ferienwohnung bietet Ihnen natürlich auch den Komfort und die

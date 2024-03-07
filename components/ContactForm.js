@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { StyledCardElement } from "./StyledCardElement";
+import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
 
 const StyledForm = styled.form`
@@ -16,9 +17,6 @@ const StyledLabel = styled.label`
   flex-direction: column;
   align-items: stretch;
   width: 20rem;
-  @media (max-width: 768px) {
-    width: 15rem;
-  }
 `;
 
 const StyledInput = styled.input`
@@ -54,34 +52,9 @@ export default function ContactForm() {
     setFormData({ ...formData, [name]: value });
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const { name, email, telephone, message } = formData;
-    const data = { name, email, telephone, message };
-
-    // Make a POST request to your serverless function
-    fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        if (response.status === 200) {
-          // Email sent successfully, you can display a success message
-          console.log("Email sent successfully");
-          // You might also want to reset the form here
-          setFormData({ name: "", email: "", telephone: "", message: "" });
-        } else {
-          // Handle other response statuses (e.g., 500 for server error)
-          console.error("Email could not be sent");
-        }
-      })
-      .catch((error) => {
-        // Handle fetch errors (e.g., network error)
-        console.error("Error sending email:", error);
-      });
+  const [state, handleSubmit] = useForm("xrgnkdrp");
+  if (state.succeeded) {
+    return <p>Vielen Dank für Ihre Nachricht!</p>;
   }
 
   return (
@@ -114,6 +87,7 @@ export default function ContactForm() {
             required
             minLength="4"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </StyledLabel>
         <StyledLabel>
           Telefonnummer:{" "}
@@ -136,6 +110,11 @@ export default function ContactForm() {
             required
             minLength="3"
           />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
         </StyledLabel>
         <SmallP>
           Ja, ich habe die{" "}
@@ -147,7 +126,9 @@ export default function ContactForm() {
           Kontaktformulars erkläre ich mich mit der Verarbeitung einverstanden.
         </SmallP>
         <StyledButtonContainer>
-          <button type="submit">Absenden</button>
+          <button type="submit" disabled={state.submitting}>
+            Absenden
+          </button>
         </StyledButtonContainer>
       </StyledForm>
     </StyledCardElement>

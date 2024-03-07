@@ -3,20 +3,74 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const images = [
-  { src: "/Wohnzimmer-2.jpeg", width: 700, height: 393 },
-  { src: "/Schlafzimmer-2.jpeg", width: 700, height: 393 },
-  { src: "/Schlafzimmer.jpeg", width: 300, height: 533 },
-  { src: "/Küche.jpeg", width: 300, height: 533 },
-  { src: "/Bad-2.jpeg", width: 700, height: 393 },
-  { src: "/Dusche.jpeg", width: 300, height: 533 },
-  { src: "/Garten.jpeg", width: 700, height: 393 },
-  { src: "/Terrasse.jpeg", width: 700, height: 393 },
-  { src: "/Terrasse-2.jpeg", width: 700, height: 393 },
-  { src: "/Terrasse-3.jpeg", width: 700, height: 393 },
-  { src: "/Sauna.jpeg", width: 700, height: 393 },
+  {
+    src: "/Wohnzimmer-2.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Wohnzimmer",
+  },
+  {
+    src: "/Schlafzimmer-2.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Schlafzimmer",
+  },
+  {
+    src: "/Schlafzimmer.jpeg",
+    width: 300,
+    height: 533,
+    alt: "Ferienwohnung Kochel - Schlafzimmer",
+  },
+  {
+    src: "/Küche.jpeg",
+    width: 300,
+    height: 533,
+    alt: "Ferienwohnung Kochel - Küche",
+  },
+  {
+    src: "/Bad-2.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Badezimmer",
+  },
+  {
+    src: "/Dusche.jpeg",
+    width: 300,
+    height: 533,
+    alt: "Ferienwohnung Kochel - Dusche",
+  },
+  {
+    src: "/Garten.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Garten",
+  },
+  {
+    src: "/Terrasse.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Terrasse",
+  },
+  {
+    src: "/Terrasse-2.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Terrasse",
+  },
+  {
+    src: "/Terrasse-3.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Terrasse",
+  },
+  {
+    src: "/Sauna.jpeg",
+    width: 700,
+    height: 393,
+    alt: "Ferienwohnung Kochel - Sauna",
+  },
 ];
 
-// Calculate aspect ratio for each image
 images.forEach((image) => {
   image.aspectRatio = image.width / image.height;
 });
@@ -97,7 +151,7 @@ const Slideshow = () => {
       setIsMobileView(window.innerWidth <= 768);
     };
 
-    handleResize(); // Initial check on mount
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 
