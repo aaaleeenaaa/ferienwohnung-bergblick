@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const images = [
   {
-    src: "/Wohnzimmer-2.jpeg",
+    src: "/Wohnzimmer-3.jpeg",
     width: 700,
     height: 393,
     alt: "Ferienwohnung Kochel - Wohnzimmer",
@@ -43,6 +43,12 @@ const images = [
     src: "/Garten.jpeg",
     width: 700,
     height: 393,
+    alt: "Ferienwohnung Kochel - Garten",
+  },
+  {
+    src: "/Blumen.jpeg",
+    width: 300,
+    height: 533,
     alt: "Ferienwohnung Kochel - Garten",
   },
   {

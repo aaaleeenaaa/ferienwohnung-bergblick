@@ -25,7 +25,7 @@ export default function Prices() {
             pro Nacht.{" "}
           </p>
           <p>
-            Zuzüglich 2,-€ Kurtaxe pro Person und Tag und 40,-€ Endreinigung.
+            Zuzüglich 2,50,-€ Kurtaxe pro Person und Tag und 45,-€ Endreinigung.
           </p>
         </StyledCardElement>
 
